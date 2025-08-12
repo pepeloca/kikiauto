@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiki Auto, SRL – Vehículos Usados | Financiamiento Disponible</title>
+  <meta name="description" content="Kiki Auto, SRL: Venta de vehículos en Av. Jacobo Majluta #70, Marañon II, Santo Domingo Norte. Financiamiento disponible, aprobación rápida y recibimos tu vehículo como inicial.">
+  <meta name="theme-color" content="#0b1220"/>
+
+  <meta property="og:title" content="Kiki Auto, SRL – Vehículos y Financiamiento" />
+  <meta property="og:description" content="Encuentra tu próximo carro con Kiki Auto. Financiamiento disponible y aprobación rápida." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.instagram.com/kikiautord/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Ir al inicio">
+        <span class="brand__logo">Kiki Auto</span><span class="brand__tag">SRL</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">Menú</button>
+        <ul id="navMenu" class="nav__menu">
+          <li><a href="#inventario">Inventario</a></li>
+          <li><a href="#financiamiento">Financiamiento</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="btn btn--sm" target="_blank" rel="noopener" href="https://www.instagram.com/kikiautord/">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>Tu próximo carro está aquí</h1>
+        <p>Financiamiento disponible, aprobación rápida y <strong>recibimos tu vehículo</strong> como parte del inicial.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#inventario">Ver inventario</a>
+          <a class="btn btn--outline" href="#contacto">Contáctanos</a>
+        </div>
+        <ul class="hero__badges" aria-label="Beneficios">
+          <li>✅ Financiamiento</li>
+          <li>⚡ Aprobación rápida</li>
+          <li>🤝 Tomamos tu vehículo</li>
+        </ul>
+      </div>
+      <div class="hero__media" aria-hidden="true">
+        <img src="https://placehold.co/640x420/png?text=Kiki+Auto" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Inventario -->
+  <section id="inventario" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Inventario</h2>
+        <p class="muted mobile-hide">Toca cualquier vehículo para ver el modal con fotos y la ficha completa.</p>
+      </div>
+
+      <!-- Filtros -->
+      <form id="filters" class="filters" autocomplete="off">
+        <div class="filters__row">
+          <label>
+            <span>Buscar</span>
+            <input type="search" id="q" placeholder="Marca, modelo o año…">
+          </label>
+          <label>
+            <span>Moneda</span>
+            <select id="currency">
+              <option value="DOP" selected>DOP (RD$)</option>
+              <option value="USD">USD ($)</option>
+            </select>
+          </label>
+          <label>
+            <span>Marca</span>
+            <select id="brand">
+              <option value="all">Todas</option>
+            </select>
+          </label>
+          <label>
+            <span>Precio</span>
+            <select id="priceRange"></select>
+          </label>
+          <button type="reset" class="btn btn--ghost" id="clear">Limpiar</button>
+        </div>
+      </form>
+
+      <!-- Grid -->
+      <div id="cards" class="grid" aria-live="polite"></div>
+
+      <div class="center">
+        <button id="loadMore" class="btn btn--ghost">Cargar más</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financiamiento -->
+  <section id="financiamiento" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Financiamiento</h2>
+        <p class="muted fit-mobile">Trabajamos para que estrenes rápido y con cuotas cómodas.</p>
+      </div>
+
+      <div class="features">
+        <article class="card-box feature">
+          <h3>Aprobación rápida</h3>
+          <p>Proceso ágil con requisitos claros. Te orientamos paso a paso.</p>
+        </article>
+        <article class="card-box feature">
+          <h3>Recibimos tu vehículo</h3>
+          <p>Tomamos tu vehículo actual como parte del inicial para facilitarte la compra.</p>
+        </article>
+        <article class="card-box feature">
+          <h3>Transparencia total</h3>
+          <p>Precios claros y sin sorpresas. ¡Conoce todo desde el inicio!</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Sobre Kiki Auto</h2>
+      </div>
+      <div class="about">
+        <p>Somos un dealer en <strong>Av. Jacobo Majluta #70, Marañon II, Santo Domingo Norte</strong>. Cientos de clientes confían en nosotros por la atención, la transparencia y la calidad del inventario.</p>
+        <p class="muted">Síguenos en Instagram: <a target="_blank" rel="noopener" href="https://www.instagram.com/kikiautord/">@kikiautord</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Contacto</h2>
+        <p class="muted">Resolvemos por WhatsApp en minutos o llámanos directo.</p>
+      </div>
+
+      <div class="contact--pro">
+        <div class="card-box">
+          <ul class="contact__list">
+            <li><strong>Tel:</strong> <a href="tel:+18096222328">809-622-2328</a></li>
+            <li><strong>WhatsApp:</strong> <a target="_blank" rel="noopener" href="https://wa.me/18096222328">+1 809-622-2328</a></li>
+            <li><strong>Email:</strong> <a href="mailto:kikiautord@gmail.com">kikiautord@gmail.com</a></li>
+            <li><strong>Dirección:</strong> Av. Jacobo Majluta #70, Marañon II, Santo Domingo Norte 11202</li>
+            <li>
+              <strong>Horario:</strong>
+              <span id="openStatus" class="badge">Cargando…</span>
+              <div class="hours muted">Lun–Vie: 9:00–18:00 · Sáb: 9:00–14:00 · Dom: Cerrado</div>
+            </li>
+          </ul>
+
+          <div class="buttons">
+            <a class="btn" target="_blank" rel="noopener" href="https://wa.me/18096222328">WhatsApp</a>
+            <a class="btn btn--outline" href="tel:+18096222328">Llamar ahora</a>
+          </div>
+        </div>
+
+        <div class="card-box contact__map">
+          <iframe title="Mapa de ubicación Kiki Auto" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Av.%20Jacobo%20Majluta%2070%2C%20Mara%C3%B1%C3%B3n%20II%2C%20Santo%20Domingo%20Norte%2011202&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <div class="brand">
+          <span class="brand__logo">Kiki Auto</span><span class="brand__tag">SRL</span>
+        </div>
+        <p class="muted">Vehículos usados seleccionados, financiamiento y atención cercana en Santo Domingo Norte.</p>
+        <div class="socials">
+          <a class="social" target="_blank" rel="noopener" href="https://www.instagram.com/kikiautord/" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.67 0 3 1.33 3 3v10c0 1.67-1.33 3-3 3H7c-1.67 0-3-1.33-3-3V7c0-1.67 1.33-3 3-3zm11 2a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          </a>
+          <a class="social" href="tel:+18096222328" aria-label="Llamar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C11.3 22 2 12.7 2 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+          </a>
+          <a class="social" target="_blank" rel="noopener" href="https://wa.me/18096222328" aria-label="WhatsApp">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 3.5A10.5 10.5 0 006.2 19.1L4 20l.9-2.1A10.5 10.5 0 1020 3.5zM7 10.5c0 3.1 3.4 6.5 6.5 6.5.9 0 1.7-.2 2.5-.6l.7.4-.3-1a5.3 5.3 0 00.7-2.3c0-3.1-3.4-6.5-6.5-6.5-.8 0-1.6.2-2.3.6l-1-.3.4.7c-.4.8-.7 1.6-.7 2.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bar">
+      <p>© <span id="year"></span> Kiki Auto, SRL. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <!-- Modal de Detalles -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__overlay" data-close="1"></div>
+    <div class="modal__dialog">
+      <div class="modal__head">
+        <h3 id="modalTitle" class="detail__title">Detalles del vehículo</h3>
+        <button class="modal__close" data-close="1" aria-label="Cerrar">✕</button>
+      </div>
+
+      <div class="detail">
+        <!-- Galería -->
+        <div class="card-box">
+          <div class="carousel">
+            <button class="carousel__nav prev" id="prevImg" aria-label="Imagen anterior">
+              <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+            <div class="carousel__stage" id="carouselStage">
+              <img id="modalMainImg" src="" alt="" />
+              <span id="carouselCount" class="carousel__count" aria-live="polite">1/1</span>
+            </div>
+            <button class="carousel__nav next" id="nextImg" aria-label="Imagen siguiente">
+              <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+            </button>
+          </div>
+          <div id="modalThumbs" class="thumbs" aria-label="Miniaturas"></div>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <div class="detail__price" id="modalPrice"></div>
+          <ul class="specs" id="modalSpecs"></ul>
+
+          <div class="cta-row">
+            <a class="btn" id="modalWhats" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn--outline" href="tel:+18096222328">Llamar 809-622-2328</a>
+            <button class="btn btn--ghost" id="shareBtn" type="button">Compartir</button>
+          </div>
+
+          <div class="card-box-inner" id="modalDesc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mini Chat -->
+  <div id="chat" class="chat" aria-live="polite">
+    <div class="chat__window" role="dialog" aria-label="Asistente Kiki Auto">
+      <div class="chat__head">
+        <strong>Asistente Kiki Auto</strong>
+        <button id="chatClose" class="chat__close" aria-label="Cerrar chat">✕</button>
+      </div>
+      <div id="chatMessages" class="chat__msgs"></div>
+      <form id="chatForm" class="chat__form">
+        <input id="chatInput" type="text" placeholder="Escribe tu pregunta… (ej: financiamiento)" autocomplete="off"/>
+        <button id="chatSend" class="btn btn--sm" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Botón flotante abre el chat -->
+  <button id="waToggle" class="wa-float" aria-label="Asistente Kiki Auto">💬</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
